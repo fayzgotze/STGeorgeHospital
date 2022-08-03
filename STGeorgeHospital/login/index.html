@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="nav">
+            <img class="nsw" src="img/nsw.jpg" alt="NSW health">
+            <div class="nav">
+                <img src="img/logo.svg" alt="Logo">
+            </div>
+        </div>
+
+    </header>
+    <div class="content_container">
+        <div class="form_container">
+            <div class="form_header_container">
+                <h1 class="form_header">Login</h1>
+            </div>
+            <div class="form_content_container">
+                <div class="form_content_inner_container">
+                    <input type="text" id="email" placeholder="E-mail" />
+                    <input type="password" id="password" name="password" placeholder="Password" />
+                    <div class="right"></div>
+                    <span class="loginwith">Sign in with<br />social network</span>
+                    <button class="social-singin google">Log in with Google</button>
+                </div>
+                <div class="button_container">
+                    <button onclick="login()">Login</button>
+                    <button onclick="register()">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer>
+        <div class="container">
+        </div>
+    </footer>
+</body>
+
+<script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firebase-database.js"></script>
+
+<script src="index.js"></script>
+
+</html
