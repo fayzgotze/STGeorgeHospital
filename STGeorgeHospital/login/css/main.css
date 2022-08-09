@@ -5,8 +5,11 @@
 }
 
 body {
-    width: 100%;
-    height: 100%;
+    background-color: aquamarine;
+    width: 105%;
+    max-width: 1920px;
+    min-width: 480px;
+    overflow: hidden;
 }
 
 * {
@@ -25,15 +28,25 @@ body {
 header {
     background: #4F77AA;
     width: 100%;
+    position: relative;
 }
+
+h1 {
+    text-shadow: 2px 2px;
+}
+
+.container {
+    padding: 16px;
+  }
 
 .content_container {
     margin-left: 794px;
     width: 30%;
     height: 70%;
     display: flex;
-    justify-content: center;
+    justify-content: stretch;
     align-items: center;
+    /*position: relative;*/
 }
 
 .form_header {
@@ -42,6 +55,22 @@ header {
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+.form_header1 {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 1000;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.form_header2 {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-align: center;
 }
 
 .form_container {
@@ -79,14 +108,14 @@ header {
 
 .button_container {
     width: 100%;
-    height: 10%;
+    height: 50%;
     color: #4F77AA;
     float: left;
     margin-top: 5px;
     background-color: #4F77AA;
 }
 
-input {
+input[type=text], input[type=password] {
     width: 100%;
     height: 40px;
     padding-left: 10px;
@@ -103,11 +132,26 @@ input {
     float: left;
     font-family: Montserrat;
     letter-spacing: 1px;
+    padding: 14px 20px;
     font-weight: 900;
     font-size: 12px;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #4F77AA;
+    background-color: #2262b6;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+  span.psw {
+    float: right;
+    padding-top: 16px;
 }

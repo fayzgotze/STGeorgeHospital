@@ -18,32 +18,53 @@
             <div class="nav">
                 <img src="img/logo.svg" alt="Logo">
             </div>
-        </div>
+        </div> 
 
     </header>
+    
     <div class="content_container">
+        <div class="form_header_container">
+            <h1 class="form_header1">Welcome to<br>TRIALS</h1>
+        </div>
+
         <div class="form_container">
             <div class="form_header_container">
-                <h1 class="form_header">Login</h1>
+                <h2 class="form_header2">Login Form</h2>
             </div>
+            
             <div class="form_content_container">
                 <div class="form_content_inner_container">
-                    <input type="text" id="email" placeholder="E-mail" />
-                    <input type="password" id="password" name="password" placeholder="Password" />
-                    <div class="right"></div>
-                    <span class="loginwith">Sign in with<br />social network</span>
-                    <button class="social-singin google">Log in with Google</button>
-                </div>
-                <div class="button_container">
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" id="email" name="email" placeholder="Enter E-mail" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" id="password" name="psw" placeholder="Enter Password" required>
+                    
+                    <div class="button_container">
                     <button onclick="login()">Login</button>
                     <button onclick="register()">Register</button>
+                    </div> 
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                      </label>
+                    
+                    <div class="middle">
+                    <span class="loginwith">Sign in with social network</span>
+                    <button class="social-singin google">Log in with Google</button>
+                    </div>
+
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                      </div>  
                 </div>
+
             </div>
         </div>
     </div>
     </section>
     <footer>
-        <div class="container">
+        <div class="footer_container">
         </div>
     </footer>
 </body>
