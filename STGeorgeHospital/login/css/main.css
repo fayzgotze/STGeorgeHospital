@@ -1,4 +1,154 @@
 * {
+    box-sizing: border-box;
+  }
+  body {
+    background-color: rgb(211, 233, 236);
+    width: 100%;
+    max-width: 1920px;
+    min-width: 480px;
+    overflow: auto;
+}
+
+img.nsw {
+    float: left;
+    min-width: 170px;
+    border-radius: 50%;
+    position: relative;
+}
+
+img.stg {
+  position: relative;
+  gap: 100px;
+  margin: 0px 0px auto auto;
+  display: flex;
+}
+
+
+.header {
+    background: #4F77AA;
+    height: auto;
+    max-height: 168px;
+    width: 100%;
+    position: relative;
+    margin-left: -7px;
+    margin-top: -7px;
+    display: flex;
+    
+}
+img.logo {
+    max-width: 10%;
+    border-radius: 50%;
+    display: flex;
+  }
+  
+  /* style the container */
+  .container {
+    position: relative;
+    border-radius: 5px;
+    padding: 16px;
+  }
+  /* style inputs and link buttons */
+  input[type=text], input[type=password] {
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    font-family: Montserrat;
+    font-weight: 500;
+    color: #000000;
+    font-size: 12px;
+}
+.google {
+    background-color: #4c64eb;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none;
+  }
+
+  .button_container button {
+    width: 50%;
+    height: 100%;
+    float: left;
+    font-family: Montserrat;
+    letter-spacing: 1px;
+    padding: 14px 20px;
+    font-weight: 900;
+    font-size: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6b8bb4;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+/* Two-column layout */
+.col {
+    float: left;
+    width: 50%;
+    margin: auto;
+    padding: 0 50px;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* vertical line */
+  .vl {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid #ddd;
+    height: 175px;
+  }
+  
+  /* text inside the vertical line */
+  .vl-innertext {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 8px 10px;
+  }
+  
+  /* hide some text on medium and large screens */
+  .hide-md-lg {
+    display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    .col {
+      width: 100%;
+      margin-top: 0;
+    }
+    /* hide the vertical line */
+    .vl {
+      display: none;
+    }
+    /* show the hidden text on small screens */
+    .hide-md-lg {
+      display: block;
+      text-align: center;
+    }
+  }
+/** {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,14 +156,10 @@
 
 body {
     background-color: aquamarine;
-    width: 105%;
+    width: 100%;
     max-width: 1920px;
     min-width: 480px;
     overflow: hidden;
-}
-
-* {
-    box-sizing: border-box;
 }
 
 .nav {
@@ -46,7 +192,7 @@ h1 {
     display: flex;
     justify-content: stretch;
     align-items: center;
-    /*position: relative;*/
+    position: relative;
 }
 
 .form_header {
@@ -72,10 +218,27 @@ h1 {
     letter-spacing: 1px;
     text-align: center;
 }
-
+.left {
+    background: white;
+    height: calc(100% - 40px);
+    top: 20px;
+    position: relative;
+    width: 50%;
+    float: left;
+}
+.right {
+    background: #474A59;
+    box-shadow: 0px 0px 40px 16px rgba(0,0,0,0.22);
+    color: #F1F1F2;
+    position: relative;
+    float: right;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px 0 30px 0;
+}
 .form_container {
-    width: 100%;
-    height: 100%;
+    height: 700px;
+    width: 400px;
 }
 
 .form_header_container {
@@ -91,13 +254,14 @@ h1 {
 }
 
 .form_content_container {
-    width: 100%;
-    height: 90%;
+    width: 60%;
+    height: 100%;
     float: left;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 30px;
+    
+    
 }
 
 .form_content_inner_container {
@@ -154,4 +318,4 @@ button:hover {
   span.psw {
     float: right;
     padding-top: 16px;
-}
+}*/
